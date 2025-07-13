@@ -47,3 +47,32 @@ body {
 .navbar button:hover {
     background-color: #2980b9;
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar input[type="text"] {
+        width: 90%;
+    }
+
+    .navbar button {
+        width: 90%;
+        margin-top: 0.5rem;
+    }
+}
