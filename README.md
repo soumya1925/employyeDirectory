@@ -82,5 +82,5 @@ The Filter Employees feature allows you to dynamically narrow down the employee 
 ![filter](screenshots/filter.png)
 
 ### 🧪 example of filtered data based on first name
-![filter](screenshots/firstnameFilteration.png)
+![firstnameFilteration](screenshots/firstnameFilteration.png)
 
