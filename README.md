@@ -50,3 +50,17 @@ mvn clean install
 ▶️ Run the App
 mvn exec:java
 mvn compile exec:java
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
+
+### ➕ Add Employee
+![Add Employee](screenshots/add-employee.png)
+
+### 🔍 Search, Sort, Filter
+![Search and Filter](screenshots/search.png)
+
+### 📑 Pagination
+![Pagination](screenshots/pagination.png)
