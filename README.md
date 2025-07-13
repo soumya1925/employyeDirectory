@@ -56,11 +56,19 @@ mvn compile exec:java
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
 
-### ➕ Add Employee
-![Add Employee](screenshots/add-employee.png)
+### ➕ Add a New Employee
+Click on the Add Employee button to open a form modal where you can input:
 
-### 🔍 Search, Sort, Filter
-![Search and Filter](screenshots/search.png)
+🧍 First Name & Last Name
 
-### 📑 Pagination
-![Pagination](screenshots/pagination.png)
+📧 Email
+
+🏢 Department
+
+💼 Role
+![add employee form ](screenshots/form.png)
+
+### 🧾 Employee Card Rendering
+Once the form is submitted via the Add button, a new employee card is dynamically rendered in the card container below.
+![employee card](screenshots/card.png)
+
