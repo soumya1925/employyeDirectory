@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="src/main/resources/styles/header.css">
+    <script src="src/main/resources/scripts/filter.js" defer></script> <!-- new -->
+    <script src="src/main/resources/scripts/search.js" defer></script>
+    
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Employee Directory</h1>
+        
+        <link rel="stylesheet" href="src/main/resources/styles/search.css">
+<script src="src/main/resources/scripts/search.js" defer></script>
+
+<div class="search-bar">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by name or department"
+    >
+</div>
+        <button onclick="toggleFilter()">Filter</button>
+    </div>
+
+<link rel="stylesheet" href="src/main/resources/styles/filter.css">
+<div id="filterSidebar" class="filter-sidebar">
+    <span class="close-filter" onclick="toggleFilter()">&times;</span>
+    <h3>Filter Employees</h3>
+    <label>First Name</label>
+    <input type="text" id="filterFirstName">
+
+    <label>Department</label>
+    <input type="text" id="filterDepartment">
+
+    <label>Role</label>
+    <input type="text" id="filterRole">
+
+    <button onclick="applyFilters()">Apply</button>
+    <button onclick="clearFilters()">Reset</button>
+</div><link rel="stylesheet" href="src/main/resources/styles/sub-header.css">
+
+<script src="src/main/resources/scripts/form.js"></script>
+<script src="src/main/resources/scripts/sort.js" defer></script>
+<script src="src/main/resources/scripts/pagination.js" defer></script>
+
+<div class="sub-header">
+    <div class="controls">
+        <label for="sort">Sort:</label>
+        <select id="sort" name="sort">
+            <option value="" disabled selected>-- Select --</option>
+            <option value="firstName">First Name</option>
+            <option value="department">Department</option>
+        </select>
+
+        <label for="show">Show:</label>
+        <select id="show" name="show">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+
+    <button class="add-employee-button" onclick="openForm()">Add Employee</button>
+    <link rel="stylesheet" href="src/main/resources/styles/form.css">
+
+<div id="employeeForm" class="modal">
+    <div class="modal-content">
+        <h2>Add New Employee</h2>
+        <form onsubmit="handleFormSubmit(event)">
+            <!-- First Name -->
+            <label>First Name</label>
+            <input type="text" name="firstName" required>
+
+            <!-- Last Name -->
+            <label>Last Name</label>
+            <input type="text" name="lastName" required>
+
+            <!-- Email + Department Row -->
+            <div class="row">
+                <div class="half">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="half">
+                    <label>Department</label>
+                    <select name="department" required>
+                        <option value="" disabled selected>-- Select Department --</option>
+                        <option>Software Development</option>
+                        <option>Quality Assurance</option>
+                        <option>IT Infrastructure</option>
+                        <option>Product Management</option>
+                        <option>UI/UX Design</option>
+                        <option>Information Security</option>
+                        <option>Technical Support</option>
+                        <option>DevOps / Cloud Engineering</option>
+                        <option>Data Analytics / BI</option>
+                        <option>Human Resources</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Role -->
+            <label>Role</label>
+            <select name="role" required>
+                <option value="" disabled selected>-- Select Role --</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Full Stack Developer</option>
+                <option>DevOps Engineer</option>
+                <option>QA/Test Engineer</option>
+                <option>UI/UX Designer</option>
+                <option>Database Administrator</option>
+                <option>Security Analyst</option>
+                <option>Product Manager</option>
+                <option>Technical Support Engineer</option>
+            </select>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <button type="button" class="cancel-btn" onclick="closeForm()">Cancel</button>
+                <button type="submit" class="submit-btn">Add</button>      
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<link rel="stylesheet" href="src/main/resources/styles/card-container.css">
+<div class="card-container">
+    <!-- Cards will go here -->
+</div>
+<div id="pagination" class="pagination-controls">
+    <!-- Pagination buttons will be dynamically added here -->
+</div>
+<link rel="stylesheet" href="src/main/resources/styles/footer.css">
+<footer class="footer">
+    <p>&copy; 2025 Employee Directory App. All rights reserved.</p>
+</footer>
+</body>
+</html>
+

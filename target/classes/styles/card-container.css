@@ -1,0 +1,57 @@
+.card-container {
+    background-color: #f0f0f0; 
+    width: 100%;
+    min-height: 350px; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employee-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 280px;
+}
+
+.employee-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.employee-card h4 {
+    margin: 5px 0;
+}
+
+.card-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-buttons .edit-btn,
+.card-buttons .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-buttons .edit-btn {
+   background-color: rgb(231, 234, 235);
+}
+
+.card-buttons .delete-btn {
+    background-color: rgb(231, 234, 235);
+}
+
+.card-buttons .edit-btn:hover,
+.card-buttons .delete-btn:hover {
+    background-color: rgb(142, 146, 147);
+}

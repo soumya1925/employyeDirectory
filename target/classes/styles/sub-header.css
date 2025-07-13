@@ -1,0 +1,35 @@
+.sub-header {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: black;
+    height: 50px;
+}
+
+.sub-header .controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sub-header label {
+    margin-right: 5px;
+}
+
+.sub-header select {
+    padding: 4px 8px;
+}
+
+.add-employee-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
