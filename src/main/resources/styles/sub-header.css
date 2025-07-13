@@ -33,3 +33,28 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .sub-header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 10px;
+    }
+
+    .sub-header .controls {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .sub-header label,
+    .sub-header select {
+        width: 100%;
+    }
+
+    .add-employee-button {
+        width: 100%;
+        text-align: center;
+    }
+}
