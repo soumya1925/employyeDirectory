@@ -72,3 +72,15 @@ Click on the Add Employee button to open a form modal where you can input:
 Once the form is submitted via the Add button, a new employee card is dynamically rendered in the card container below.
 ![employee card](screenshots/card.png)
 
+###  🗂️ Filter Employees
+Click the filter button to acess the  filter parameters
+The Filter Employees feature allows you to dynamically narrow down the employee list based on:
+
+👤 Role
+
+🏢 Department
+![filter](screenshots/filter.png)
+
+### 🧪 example of filtered data based on first name
+![filter](screenshots/firstnameFilteration.png)
+
