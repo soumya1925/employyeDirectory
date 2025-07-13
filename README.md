@@ -84,3 +84,17 @@ The Filter Employees feature allows you to dynamically narrow down the employee 
 ### 🧪 example of filtered data based on first name
 ![firstnameFilteration](screenshots/firstnameFilteration.png)
 
+### 🔍 Search Employees
+Search for employees by **First Name** or **Department** using the  search bar.
+![search](screenshots/search.png)
+
+### ### ↕️ Sort Employees
+Sort the employee cards alphabetically by **First Name** or **Department** from the dropdown.
+![sort](screenshots/sort.png)
+
+### 📋 Show Employee Cards
+
+Control how many employee cards you want to display at once using the **"Show"** dropdown.
+
+- Options available: `10`, `25`, `50`, `100`
+- Automatically updates the visible cards based on your selection.
